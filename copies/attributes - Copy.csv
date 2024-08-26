@@ -1,0 +1,239 @@
+Field,Description,Type
+description,Ship description,string
+has_demo_profile,"Indicates that ship characteristics are used for illustration, and may be changed.",boolean
+is_premium,Indicates if the ship is Premium ship,boolean
+is_special,Indicates if the ship is on a special offer,boolean
+mod_slots,Number of slots for upgrades,numeric
+name,Ship name,string
+nation,Nation,string
+next_ships,List of ships available for research in form of pairs,associative array
+price_credit,Cost in credits,numeric
+price_gold,Cost in gold,numeric
+ship_id,Ship ID,numeric
+ship_id_str,Ship string ID,string
+tier,Tier,numeric
+type,Type of ship,string
+upgrades,List of compatible Modifications,list of integers
+default_profile,Parameters of basic configuration,
+default_profile.battle_level_range_max,Maximum battle tier for a random battle,numeric
+default_profile.battle_level_range_min,Minimum battle tier for a random battle,numeric
+default_profile.anti_aircraft,"Anti-aircraft guns. If the module is absent on the ship, field value is null.",
+default_profile.anti_aircraft.defense,Anti-aircraft effectiveness,numeric
+default_profile.anti_aircraft.slots,Gun slots,
+default_profile.anti_aircraft.slots.avg_damage,Average damage per second,numeric
+default_profile.anti_aircraft.slots.caliber,Caliber,numeric
+default_profile.anti_aircraft.slots.distance,Firing range (km),float
+default_profile.anti_aircraft.slots.guns,Number of guns,numeric
+default_profile.anti_aircraft.slots.name,Gun name,string
+default_profile.armour,Survivability of basic configuration,
+default_profile.armour.flood_damage,Torpedo Protection. Damage Reduction (%),numeric
+default_profile.armour.flood_prob,Torpedo Protection. Flooding Risk Reduction (%),numeric
+default_profile.armour.health,Hit points,numeric
+default_profile.armour.total,Armor protection (%),numeric
+default_profile.armour.casemate,Gun Casemate,
+default_profile.armour.casemate.max,Maximum value,numeric
+default_profile.armour.casemate.min,Minimum value,numeric
+default_profile.armour.citadel,Citadel,
+default_profile.armour.citadel.max,Maximum value,numeric
+default_profile.armour.citadel.min,Minimum value,numeric
+default_profile.armour.deck,Armored Deck,
+default_profile.armour.deck.max,Maximum value,numeric
+default_profile.armour.deck.min,Minimum value,numeric
+default_profile.armour.extremities,Forward and After Ends,
+default_profile.armour.extremities.max,Maximum value,numeric
+default_profile.armour.extremities.min,Minimum value,numeric
+default_profile.armour.range,Armor,
+default_profile.armour.range.max,Maximum value,numeric
+default_profile.armour.range.min,Minimum value,numeric
+default_profile.artillery,"Main battery. If the module is absent on the ship, field value is null.",
+default_profile.artillery.artillery_id,Gun ID,numeric
+default_profile.artillery.artillery_id_str,Gun string ID,string
+default_profile.artillery.distance,Firing range,float
+default_profile.artillery.gun_rate,Rate of fire (rounds / min),float
+default_profile.artillery.max_dispersion,Maximum dispersion (m),numeric
+default_profile.artillery.rotation_time,180 Degree Turn Time (sec),float
+default_profile.artillery.shot_delay,Main battery reload time (s),float
+default_profile.artillery.shells,Shells,
+default_profile.artillery.shells.bullet_mass,Shell weight,numeric
+default_profile.artillery.shells.bullet_speed,Shell speed,numeric
+default_profile.artillery.shells.burn_probability,Chance of Fire on target caused by shell (%),float
+default_profile.artillery.shells.damage,Maximum Damage,numeric
+default_profile.artillery.shells.name,Shell name,string
+default_profile.artillery.shells.type,Shell type,string
+default_profile.artillery.slots,Main gun slots,
+default_profile.artillery.slots.barrels,Number of barrels per slot,numeric
+default_profile.artillery.slots.guns,Number of main turrets,numeric
+default_profile.artillery.slots.name,Name,string
+default_profile.atbas,"Secondary armament. If the module is absent on the ship, field value is null.",
+default_profile.atbas.distance,Firing range,float
+default_profile.atbas.slots,Main gun slots,
+default_profile.atbas.slots.bullet_mass,Shell weight,numeric
+default_profile.atbas.slots.bullet_speed,Shell speed,numeric
+default_profile.atbas.slots.burn_probability,Chance of Fire on target caused by shell (%),float
+default_profile.atbas.slots.damage,Maximum Damage,numeric
+default_profile.atbas.slots.gun_rate,Rate of fire (rounds / min),float
+default_profile.atbas.slots.name,Shell name,string
+default_profile.atbas.slots.shot_delay,Reload time (s),float
+default_profile.atbas.slots.type,Shell type,string
+default_profile.concealment,Concealment of basic configuration,
+default_profile.concealment.detect_distance_by_plane,Air Detectability Range,float
+default_profile.concealment.detect_distance_by_ship,Surface Detectability Range,float
+default_profile.concealment.detect_distance_by_submarine,Detectability range by depths,float
+default_profile.concealment.total,Concealment (%),numeric
+default_profile.depth_charge,Depth charges,
+default_profile.depth_charge.bomb_max_damage,Maximum damage,numeric
+default_profile.depth_charge.max_packs,Number of charges,numeric
+default_profile.depth_charge.num_bombs_in_pack,Bombs in charge,numeric
+default_profile.depth_charge.reload_time,Reload time,float
+default_profile.dive_bomber,"Dive bombers. If the module is absent on the ship, field value is null.",
+default_profile.dive_bomber.bomb_bullet_mass,Bomb weight,numeric
+default_profile.dive_bomber.bomb_burn_probability,Chance of Fire on target caused by bomb (%),float
+default_profile.dive_bomber.bomb_damage,Maximum bomb damage,numeric
+default_profile.dive_bomber.bomb_name,Bomb name,string
+default_profile.dive_bomber.cruise_speed,Cruise Speed (knots),numeric
+default_profile.dive_bomber.dive_bomber_id,Dive bombers' ID,numeric
+default_profile.dive_bomber.dive_bomber_id_str,Dive bombers string ID,string
+default_profile.dive_bomber.gunner_damage,Average damage per rear gunner of a dive bomber per second,numeric
+default_profile.dive_bomber.max_damage,Maximum Bomb Damage,numeric
+default_profile.dive_bomber.max_health,Survivability,numeric
+default_profile.dive_bomber.name,Name of squadron,string
+default_profile.dive_bomber.plane_level,Dive bomber tier,numeric
+default_profile.dive_bomber.prepare_time,Time of preparation for takeoff (sec),numeric
+default_profile.dive_bomber.squadrons,Number of squadrons,numeric
+default_profile.dive_bomber.accuracy,Accuracy,
+default_profile.dive_bomber.accuracy.max,Maximum value,float
+default_profile.dive_bomber.accuracy.min,Minimum value,float
+default_profile.dive_bomber.count_in_squadron,Number of aircraft in a squadron,
+default_profile.dive_bomber.count_in_squadron.max,Maximum value,numeric
+default_profile.dive_bomber.count_in_squadron.min,Minimum value,numeric
+default_profile.engine,Engine,
+default_profile.engine.engine_id,Engine ID,numeric
+default_profile.engine.engine_id_str,Engine string ID,string
+default_profile.engine.max_speed,Top Speed (knots),float
+default_profile.fighters,"Fighters. If the module is absent on the ship, field value is null.",
+default_profile.fighters.avg_damage,Average damage caused per second,numeric
+default_profile.fighters.cruise_speed,Cruise Speed (knots),numeric
+default_profile.fighters.fighters_id,Fighters' ID,numeric
+default_profile.fighters.fighters_id_str,Fighters string ID,string
+default_profile.fighters.gunner_damage,Average damage per gunner of a fighter per second,numeric
+default_profile.fighters.max_ammo,Ammunition,numeric
+default_profile.fighters.max_health,Survivability,numeric
+default_profile.fighters.name,Name of squadron,string
+default_profile.fighters.plane_level,Fighter tier,numeric
+default_profile.fighters.prepare_time,Time of preparation for takeoff (sec),numeric
+default_profile.fighters.squadrons,Number of squadrons,numeric
+default_profile.fighters.count_in_squadron,Number of aircraft in a squadron,
+default_profile.fighters.count_in_squadron.max,Maximum value,numeric
+default_profile.fighters.count_in_squadron.min,Minimum value,numeric
+default_profile.fire_control,"Gun Fire Control System. If the module is absent on the ship, field value is null.",
+default_profile.fire_control.distance,Firing range,float
+default_profile.fire_control.distance_increase,Firing Range extension (%),numeric
+default_profile.fire_control.fire_control_id,ID of Gun Fire Control System,numeric
+default_profile.fire_control.fire_control_id_str,String ID of Gun Fire Control System,string
+default_profile.flight_control,"Flight Control. If the module is absent on the ship, field value is null.",
+default_profile.flight_control.bomber_squadrons,Number of bomber squadrons,numeric
+default_profile.flight_control.fighter_squadrons,Number of fighter squadrons,numeric
+default_profile.flight_control.flight_control_id,Flight Control ID,numeric
+default_profile.flight_control.flight_control_id_str,Flight Control string ID,string
+default_profile.flight_control.torpedo_squadrons,Number of torpedo bomber squadrons,numeric
+default_profile.hull,Hull,
+default_profile.hull.anti_aircraft_barrels,AA Mounts,numeric
+default_profile.hull.artillery_barrels,Number of main turrets,numeric
+default_profile.hull.atba_barrels,Secondary gun turrets,numeric
+default_profile.hull.health,Hit points,numeric
+default_profile.hull.hull_id,Hull ID,numeric
+default_profile.hull.hull_id_str,Hull string ID,string
+default_profile.hull.planes_amount,Hangar capacity,numeric
+default_profile.hull.torpedoes_barrels,Torpedo tubes,numeric
+default_profile.hull.range,Armor (mm),
+default_profile.hull.range.max,Maximum value,numeric
+default_profile.hull.range.min,Minimum value,numeric
+default_profile.mobility,Maneuverability of basic configuration,
+default_profile.mobility.max_speed,Top Speed (knots),float
+default_profile.mobility.rudder_time,Rudder Shift Time (sec),float
+default_profile.mobility.total,Maneuverability (%),numeric
+default_profile.mobility.turning_radius,Turning Circle Radius (m),numeric
+default_profile.submarine_battery,Dive capacity of basic configuration,
+default_profile.submarine_battery.consumption_rate,Dive capacity depletion,float
+default_profile.submarine_battery.max_capacity,Dive capacity,float
+default_profile.submarine_battery.regen_rate,Dive capacity recharge rate,float
+default_profile.submarine_battery.total,Dive capacity (%),numeric
+default_profile.submarine_mobility,Underwater maneuvering of basic configuration,
+default_profile.submarine_mobility.buoyancy_rudder_time,Diving plane shift time,float
+default_profile.submarine_mobility.max_buoyancy_speed,Maximum dive and ascent speed,float
+default_profile.submarine_mobility.max_speed_under_water,Maximum submerged speed,numeric
+default_profile.submarine_mobility.total,Underwater maneuvering (%),numeric
+default_profile.submarine_sonar,Sonar of basic configuration,
+default_profile.submarine_sonar.submarine_sonar_id,Sonar ID,numeric
+default_profile.submarine_sonar.submarine_sonar_id_str,Sonar string ID,string
+default_profile.submarine_sonar.total,Sonar (%),numeric
+default_profile.submarine_sonar.wave_duration_0,Duration of a ping effect on a sector highlighted once,numeric
+default_profile.submarine_sonar.wave_duration_1,Duration of a ping effect on a sector highlighted twice,numeric
+default_profile.submarine_sonar.wave_max_dist,Maximum range,float
+default_profile.submarine_sonar.wave_shot_delay,Reload time,float
+default_profile.submarine_sonar.wave_speed_max,Ping velocity,numeric
+default_profile.submarine_sonar.wave_width,Ping width,numeric
+default_profile.torpedo_bomber,"Torpedo bombers. If the module is absent on the ship, field value is null.",
+default_profile.torpedo_bomber.cruise_speed,Cruise Speed (knots),numeric
+default_profile.torpedo_bomber.gunner_damage,Average damage per rear gunner of a torpedo bomber per second,numeric
+default_profile.torpedo_bomber.max_damage,Maximum Bomb Damage,numeric
+default_profile.torpedo_bomber.max_health,Survivability,numeric
+default_profile.torpedo_bomber.name,Name of squadron,string
+default_profile.torpedo_bomber.plane_level,Torpedo bomber tier,numeric
+default_profile.torpedo_bomber.prepare_time,Time of preparation for takeoff (sec),numeric
+default_profile.torpedo_bomber.squadrons,Number of squadrons,numeric
+default_profile.torpedo_bomber.torpedo_bomber_id,Torpedo bombers' ID,numeric
+default_profile.torpedo_bomber.torpedo_bomber_id_str,Torpedo bombers string ID,string
+default_profile.torpedo_bomber.torpedo_damage,Maximum torpedo damage,numeric
+default_profile.torpedo_bomber.torpedo_distance,Firing range,float
+default_profile.torpedo_bomber.torpedo_max_speed,Top Speed (knots),numeric
+default_profile.torpedo_bomber.torpedo_name,Torpedo name,string
+default_profile.torpedo_bomber.count_in_squadron,Number of aircraft in a squadron,
+default_profile.torpedo_bomber.count_in_squadron.max,Maximum value,numeric
+default_profile.torpedo_bomber.count_in_squadron.min,Minimum value,numeric
+default_profile.torpedoes,"Torpedo tubes. If the module is absent on the ship, field value is null.",
+default_profile.torpedoes.distance,Firing range,float
+default_profile.torpedoes.max_damage,Maximum Damage,numeric
+default_profile.torpedoes.reload_time,Reload Time (sec),numeric
+default_profile.torpedoes.rotation_time,180 Degree Turn Time (sec),float
+default_profile.torpedoes.torpedo_name,Torpedo,string
+default_profile.torpedoes.torpedo_speed,Torpedo Speed (knots),numeric
+default_profile.torpedoes.torpedoes_id,Torpedo tubes' ID,numeric
+default_profile.torpedoes.torpedoes_id_str,Torpedo tubes string ID,string
+default_profile.torpedoes.visibility_dist,Torpedo range (km),float
+default_profile.torpedoes.slots,Slots for Torpedo tubes,
+default_profile.torpedoes.slots.barrels,Torpedo tubes per slot,numeric
+default_profile.torpedoes.slots.caliber,Caliber,numeric
+default_profile.torpedoes.slots.guns,Torpedo tubes,numeric
+default_profile.torpedoes.slots.name,Name,string
+default_profile.weaponry,Armament effectiveness of basic configuration,
+default_profile.weaponry.aircraft,Aircraft (%),numeric
+default_profile.weaponry.anti_aircraft,AA Guns (%),numeric
+default_profile.weaponry.artillery,Artillery (%),numeric
+default_profile.weaponry.torpedoes,Torpedoes (%),numeric
+images,Image of a ship,
+images.contour,URL to 186 x 48 px outline image of ship,string
+images.large,URL to 870 x 512 px image of ship,string
+images.medium,URL to 435 x 256 px image of ship,string
+images.small,URL to 214 x 126 px image of ship,string
+modules,List of compatible modules,
+modules.artillery,"Main battery. If the module is absent on the ship, field value is null.",list of integers
+modules.dive_bomber,"Dive bombers. If the module is absent on the ship, field value is null.",list of integers
+modules.engine,Engines,list of integers
+modules.fighter,"Fighters. If the module is absent on the ship, field value is null.",list of integers
+modules.fire_control,"Gun Fire Control System. If the module is absent on the ship, field value is null.",list of integers
+modules.flight_control,"Flight Control. If the module is absent on the ship, field value is null.",list of integers
+modules.hull,Hull,list of integers
+modules.sonar,Sonar,list of integers
+modules.torpedo_bomber,"Torpedo bombers. If the module is absent on the ship, field value is null.",list of integers
+modules.torpedoes,"Torpedo tubes. If the module is absent on the ship, field value is null.",list of integers
+modules_tree,Module research information,
+modules_tree.is_default,Indicates if the module is basic,boolean
+modules_tree.module_id,Module ID,numeric
+modules_tree.module_id_str,Module string ID,string
+modules_tree.name,Module name,string
+modules_tree.next_modules,List of module IDs available after research of the module,list of integers
+modules_tree.next_ships,List of vehicle IDs available after research of the module,list of integers
+modules_tree.price_credit,Cost in credits,numeric
+modules_tree.price_xp,Research cost,numeric
+modules_tree.type,Module type,string
