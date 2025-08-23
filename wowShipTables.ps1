@@ -30,7 +30,7 @@ for ($i = 0; $i -lt $pagecount; $i++) {
 
 
     foreach ($ship in $shipData) {
-
+        $ship.name
 
         # Create a PSCustomObject for each ship with relevant properties
         $shipObject = [PSCustomObject]@{
@@ -55,13 +55,13 @@ for ($i = 0; $i -lt $pagecount; $i++) {
 
 }
 
-
-
+$datenow = Get-Date -Format "yyyy-MM-dd-HHmm"
+$filename = "ships-$datenow.csv"
 
 $shipsTable | Format-Table -AutoSize
 
 # Determine the path to save the CSV
-$outputFilePath = Join-Path -Path $PSScriptRoot -ChildPath "ships.csv"
+$outputFilePath = Join-Path -Path $PSScriptRoot -ChildPath $filename
 
 # Export the table to a CSV file in the script's directory
 $shipsTable | Export-Csv -Path $outputFilePath -NoTypeInformation
